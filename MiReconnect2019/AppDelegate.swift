@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        registerForPushNotifications()
+        
         return true
     }
 
@@ -41,6 +46,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        print("MessageID : \(userInfo["gcm_message_id"]!)")
+        
+        print(userInfo)
+        
+    }
+    
+    func registerForPushNotifications() {
+        UNUserNotificationCenter.current()
+            .requestAuthorization(options: [.alert, .sound, .badge]) {
+                [weak self] granted, error in
+                
+                print("Permission granted: \(granted)")
+                guard granted else { return }
+                self?.getNotificationSettings()
+        }    }
+    
+    func getNotificationSettings() {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            print("Notification settings: \(settings)")
+        }
+    }
 
 }
 

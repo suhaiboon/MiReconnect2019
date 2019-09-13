@@ -45,7 +45,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        arrayOfIDs = ["A", "B", "C", "D", "E", "F"]
+        arrayOfIDs = ["A", "B", "C", "D", "E", "F", "T"]
 
 
     }

@@ -41,14 +41,14 @@
                                                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtc-F2-eEx">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QTf-fD-WAf">
-                                                            <rect key="frame" x="57" y="55.5" width="36" height="59.5"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QTf-fD-WAf">
+                                                            <rect key="frame" x="57" y="58" width="36" height="54.5"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TeamIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ifl-YO-gHc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgF-2g-sva">
-                                                                    <rect key="frame" x="4" y="46" width="28.5" height="13.5"/>
+                                                                    <rect key="frame" x="4" y="41" width="28.5" height="13.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -156,7 +156,7 @@
         <!--Speaker List Screen-->
         <scene sceneID="umm-8a-09e">
             <objects>
-                <viewController storyboardIdentifier="B" id="IrZ-Yx-a2w" customClass="SpeakerListScreen" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B" id="IrZ-Yx-a2w" customClass="SpeakerListScreen" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="LeD-B8-o0u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
         <!--Speakers View Controller-->
         <scene sceneID="GaR-Wt-DNN">
             <objects>
-                <viewController id="5zz-vg-fKp" customClass="SpeakersViewController" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5zz-vg-fKp" customClass="SpeakersViewController" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" tag="1" contentMode="scaleAspectFill" id="etP-rE-iNH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,12 +375,12 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="297" y="579"/>
+            <point key="canvasLocation" x="285.50724637681162" y="578.57142857142856"/>
         </scene>
         <!--Vendor List Screen-->
         <scene sceneID="gjn-Mr-Zwg">
             <objects>
-                <viewController storyboardIdentifier="C" id="ehV-dR-5xX" customClass="VendorListScreen" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="C" id="ehV-dR-5xX" customClass="VendorListScreen" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mCK-kq-7Qh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +556,7 @@
         <!--Sponsor List Screen-->
         <scene sceneID="pqc-gO-bvj">
             <objects>
-                <viewController storyboardIdentifier="D" id="qLc-Ie-dKR" customClass="SponsorListScreen" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="D" id="qLc-Ie-dKR" customClass="SponsorListScreen" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vf9-Q4-qlT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -720,7 +720,7 @@
         <!--Contact Us View Controller-->
         <scene sceneID="v9Q-5z-ovO">
             <objects>
-                <viewController storyboardIdentifier="F" id="Hrc-Di-5qn" customClass="ContactUsViewController" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="F" id="Hrc-Di-5qn" customClass="ContactUsViewController" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3c-kv-upy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1429,7 +1429,7 @@
         <!--Team View Controller-->
         <scene sceneID="dmo-km-I72">
             <objects>
-                <viewController storyboardIdentifier="E" id="8Jg-p0-bBB" customClass="TeamViewController" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="E" id="8Jg-p0-bBB" customClass="TeamViewController" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rhx-Nk-yf1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1555,7 +1555,7 @@
         <!--Agenda-->
         <scene sceneID="0VT-dE-5Av">
             <objects>
-                <viewController storyboardIdentifier="A" id="0nP-Kd-HS4" customClass="AgnedaTableViewController" customModule="MiReconnect2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A" id="0nP-Kd-HS4" customClass="AgnedaTableViewController" customModule="MiReconnect2019" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fr-oF-b4K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
